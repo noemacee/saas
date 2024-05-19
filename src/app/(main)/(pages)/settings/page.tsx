@@ -53,9 +53,6 @@ const Settings = async (props: Props) => {
         profileImage: image,
       },
     });
-    // Print "c'est de la merde"
-    console.log("c'est de la merde");
-
     return response;
   };
   const updateUserInfo = async (name: string) => {

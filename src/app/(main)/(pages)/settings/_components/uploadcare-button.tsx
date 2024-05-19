@@ -18,10 +18,8 @@ const UploadCareButton = ({ onUpload }: Props) => {
 
   useEffect(() => {
     const handleUpload = async (e: any) => {
-      const { file } = await onUpload(e);
-      if (file) {
-        router.refresh();
-      }
+      const { file } = await onUpload(e.detail.cdnUrl);
+      router.refresh();
     };
 
     if (ctxProviderRef.current === null) return;
