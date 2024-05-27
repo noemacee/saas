@@ -1,4 +1,5 @@
 import React from "react";
+import WorkflowButton from "./_components/workflow-button";
 
 type Props = {};
 
@@ -12,3 +13,5 @@ const Workflows = (props: Props) => {
     </div>
   );
 };
+
+export default Workflows;
